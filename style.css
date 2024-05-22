@@ -1,0 +1,49 @@
+body {
+    background-color: #ffffff;
+    background-image: url(img/background.jpg);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-custom {
+    background-color: #5db4ea;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-img {
+    height: 450px;
+    width: 1000px;
+    object-fit: cover;
+}
+
+.carousel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h4 {
+    background-color: #5db4ea;
+    text-align: center;
+}
+
+.cards-line {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card-body {
+    background-color: #5db4ea;
+}
+
+.form-custom {
+    background-color: #5db4ea;
+    margin-left: 100px;
+    margin-right: 100px;
+}
