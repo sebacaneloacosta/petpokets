@@ -64,7 +64,7 @@
             <div class="card-body">
             <h5 class="card-title">Taste of the Wild Salmon</h5>
             <p class="card-text">$44.000</p>
-            <a href="#" class="btn btn-light">Agregar al carrito</a>
+            <button onclick="addToCart('Taste of the Wild Salmon', 44000)" class="btn btn-light">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -72,7 +72,7 @@
             <div class="card-body">
             <h5 class="card-title">Taste of the Wild Venado</h5>
             <p class="card-text">$48.000</p>
-            <a href="#" class="btn btn-light">Agregar al carrito</a>
+            <button onclick="addToCart('Taste of the Wild Venado', 48000)" class="btn btn-light">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -80,25 +80,36 @@
             <div class="card-body">
             <h5 class="card-title">Leonardo Senior</h5>
             <p class="card-text">$54.000</p>
-            <a href="#" class="btn btn-light">Agregar al carrito</a>
+            <button onclick="addToCart('Leonardo Senior', 54000)" class="btn btn-light">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/comidagato4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Leonardo Pato</h5>
+            <h5 class="card-title">Leonardo sabor Pato</h5>
             <p class="card-text">$52.000</p>
-            <a href="#" class="btn btn-light">Agregar al carrito</a>
+            <button onclick="addToCart('Leonardo sabor Pato', 52000)" class="btn btn-light">Agregar al carrito</button>
             </div>
         </div>
     </div>
 
 
-
+    <!-- Contenido de la ventana del carrito -->      
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="cartItems" class="list-group mb-3"></ul>
+        <h6>Total: $<span id="totalAmount">0</span></h6>
+      </div>
+    </div>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="carrito.js"></script>
+  </body>
 </html>

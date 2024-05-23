@@ -89,6 +89,18 @@
           <button type="submit" class="btn btn-light custom-submit">Registrarme</button>
       </form>
   </div>
+
+      <!-- Contenido de la ventana del carrito -->      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul id="cartItems" class="list-group mb-3"></ul>
+          <h6>Total: $<span id="totalAmount">0</span></h6>
+        </div>
+      </div>
     
 
 
@@ -175,7 +187,7 @@
           }
       });
   </script>
-
+<script src="carrito.js"></script>
 
   </body>
 </html>
