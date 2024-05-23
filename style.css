@@ -43,11 +43,24 @@ h4 {
 }
 
 .form-custom {
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
     background-color: #5db4ea;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-radius: 12px;
 }
+
  .logo-custom {
     height: 40px;
     width: 40px;
+}
+
+/*Clase para errores en formulario*/
+.error {
+    color: rgb(255, 255, 255);
+}
+
+.custom-submit {
+    width: 100%;
+    border-radius: 12px;
 }
